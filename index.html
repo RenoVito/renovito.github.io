@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amenimia — Vito Renò</title>
+  <meta name="description" content="Amenimia è ciò che accade quando l'io smette di osservare il mondo e ricomincia ad appartenergli.">
+  <meta name="author" content="Vito Renò">
+  <meta name="theme-color" content="#f3f0e9">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Amenimia — Vito Renò">
+  <meta property="og:description" content="Amenimia è ciò che accade quando l'io smette di osservare il mondo e ricomincia ad appartenergli.">
+  <meta property="og:locale" content="it_IT">
+
+  <style>
+    :root {
+      --paper: #f3f0e9;
+      --ink: #171714;
+      --muted: #57544e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100svh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Söhne", "Neue Haas Grotesk Text Pro",
+                   "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    main {
+      min-height: 100svh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: clamp(24px, 4vw, 56px);
+    }
+
+    .content {
+      align-self: center;
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      padding: 8vh 0 14vh;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Canela", "Cormorant Garamond", Garamond,
+                   "Times New Roman", serif;
+      font-size: clamp(5rem, 17vw, 13.5rem);
+      font-weight: 300;
+      line-height: 0.83;
+      letter-spacing: -0.055em;
+    }
+
+    .statement {
+      width: min(800px, 84%);
+      margin: clamp(110px, 17vh, 210px) 0 0 auto;
+      font-family: "Canela", "Cormorant Garamond", Garamond,
+                   "Times New Roman", serif;
+      font-size: clamp(1.8rem, 3.4vw, 3.45rem);
+      font-weight: 300;
+      line-height: 1.16;
+      letter-spacing: -0.025em;
+    }
+
+    footer {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 24px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.4;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding: 22px 20px 24px;
+      }
+
+      .content {
+        padding: 10vh 0 14vh;
+      }
+
+      h1 {
+        font-size: clamp(4.2rem, 22vw, 7.5rem);
+        line-height: 0.88;
+      }
+
+      .statement {
+        width: 94%;
+        margin-top: 18vh;
+        font-size: clamp(1.65rem, 7vw, 2.45rem);
+      }
+
+      footer {
+        justify-content: flex-start;
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="content" aria-labelledby="titolo">
+      <h1 id="titolo">Amenimia</h1>
+
+      <p class="statement">
+        Amenimia è ciò che accade quando l'io smette di osservare il mondo
+        e ricomincia ad appartenergli.
+      </p>
+    </section>
+
+    <footer>Vito Renò</footer>
+  </main>
+</body>
+</html>
