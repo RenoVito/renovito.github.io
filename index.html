@@ -1,129 +1,107 @@
-<!doctype html>
-<html lang="it">
-<head>
+
+<html lang="it"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amenimia — Vito Renò</title>
-  <meta name="description" content="Amenimia è ciò che accade quando l'io smette di osservare il mondo e ricomincia ad appartenergli.">
+  <meta name="description" content="Amenimia. È ciò che accade quando l'io smette di osservare il mondo e ricomincia ad appartenergli.">
   <meta name="author" content="Vito Renò">
-  <meta name="theme-color" content="#f3f0e9">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Amenimia — Vito Renò">
-  <meta property="og:description" content="Amenimia è ciò che accade quando l'io smette di osservare il mondo e ricomincia ad appartenergli.">
-  <meta property="og:locale" content="it_IT">
+  <meta name="theme-color" content="#ffffff">
 
   <style>
     :root {
-      --paper: #f3f0e9;
-      --ink: #171714;
-      --muted: #57544e;
+      --paper: #ffffff;
+      --ink: #111111;
     }
 
     * {
       box-sizing: border-box;
     }
 
-    html {
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
       background: var(--paper);
+      color: var(--ink);
     }
 
     body {
-      margin: 0;
-      min-height: 100svh;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: "Söhne", "Neue Haas Grotesk Text Pro",
-                   "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Canela", "Cormorant Garamond", Garamond, "Times New Roman", serif;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
 
     main {
       min-height: 100svh;
-      display: grid;
-      grid-template-rows: 1fr auto;
-      padding: clamp(24px, 4vw, 56px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(28px, 6vw, 96px);
     }
 
-    .content {
-      align-self: center;
-      width: min(1180px, 100%);
-      margin: 0 auto;
-      padding: 8vh 0 14vh;
+    .intro {
+      width: min(1200px, 100%);
+      text-align: center;
+      transform: translateY(-3vh);
     }
 
     h1 {
       margin: 0;
-      font-family: "Canela", "Cormorant Garamond", Garamond,
-                   "Times New Roman", serif;
-      font-size: clamp(5rem, 17vw, 13.5rem);
+      font-size: clamp(5rem, 14vw, 12rem);
       font-weight: 300;
-      line-height: 0.83;
+      line-height: 0.9;
       letter-spacing: -0.055em;
     }
 
     .statement {
-      width: min(800px, 84%);
-      margin: clamp(110px, 17vh, 210px) 0 0 auto;
-      font-family: "Canela", "Cormorant Garamond", Garamond,
-                   "Times New Roman", serif;
-      font-size: clamp(1.8rem, 3.4vw, 3.45rem);
+      margin: clamp(52px, 7vh, 84px) auto 0;
+      max-width: 28ch;
+      font-size: clamp(1.8rem, 3.25vw, 3.7rem);
       font-weight: 300;
-      line-height: 1.16;
+      line-height: 1.14;
       letter-spacing: -0.025em;
     }
 
-    footer {
-      display: flex;
-      justify-content: flex-end;
-      padding-top: 24px;
-      color: var(--muted);
-      font-size: 10px;
-      line-height: 1.4;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
+    .statement span {
+      display: block;
     }
 
     @media (max-width: 720px) {
       main {
-        padding: 22px 20px 24px;
+        padding: 24px 18px;
       }
 
-      .content {
-        padding: 10vh 0 14vh;
+      .intro {
+        transform: translateY(-2vh);
       }
 
       h1 {
-        font-size: clamp(4.2rem, 22vw, 7.5rem);
-        line-height: 0.88;
+        font-size: clamp(4.5rem, 21vw, 7.5rem);
+        line-height: 0.92;
       }
 
       .statement {
-        width: 94%;
-        margin-top: 18vh;
-        font-size: clamp(1.65rem, 7vw, 2.45rem);
-      }
-
-      footer {
-        justify-content: flex-start;
-        font-size: 9px;
+        margin-top: 54px;
+        max-width: 22ch;
+        font-size: clamp(1.6rem, 7vw, 2.5rem);
+        line-height: 1.16;
       }
     }
   </style>
 </head>
+
 <body>
   <main>
-    <section class="content" aria-labelledby="titolo">
-      <h1 id="titolo">Amenimia</h1>
+    <section class="intro" aria-labelledby="amenimia-title">
+      <h1 id="amenimia-title">Amenimia</h1>
 
       <p class="statement">
-        Amenimia è ciò che accade quando l'io smette di osservare il mondo
-        e ricomincia ad appartenergli.
+        <span>È ciò che accade quando</span>
+        <span>l'io smette di osservare il mondo</span>
+        <span>e ricomincia ad appartenergli.</span>
       </p>
     </section>
-
-    <footer>Vito Renò</footer>
   </main>
-</body>
-</html>
+
+
+</body></html>
